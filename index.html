@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -30,5 +31,69 @@
         </div>
     </div>
 </div>
+
+<!-------- About -------->
+<div id="about">
+    <div class="container"> 
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a student and I am a 2nd year Telecomunications and Informatics Student at Instituto Superior Técnico. I have experience with many programming languages such as Python, C, Java and Assembly. I don't possess any work experience yet but I want to learn, to be better and to help who needs. I consider myself to be carismatic and curious who tries to do everything in his power to do any jobs at hand. I'm persistent, resilient and I want always to be the best version of myserlf. As everyone else, I have flaws, but I strive to be better everyday and to be a better person as well. I’m currently seeking for a Summer Internship for self improvement and discovery, if you know any suitable opportunity, feel free to contact me.</p>
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>My First Programming Language and developed a Game</li>
+                        <li><span>C</span><br>Algorithms and Data Structures</li>
+                        <li><span>Assembly</span><br>Developed a Game</li>
+                        <li><span>Java</span><br>Object Oriented Programming</li>
+                        <li><span>SQL</span><br>Developed a Web App with a PostgreSQL database</li>
+                        <li><span>Latex and Markdown</span><br>For document writing purposes</li>
+                        <li><span>HTML and CSS</span><br>Frontend development</li>
+                        <li><span>JavaScript</span><br>Developed an App with p5js framework</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Volunteering Experience 2022 - Current</span><br>First year Mentor at Instituto Superior Tecnico's Mentoring Program </li>
+                        <li><span>Professional Experience</span><br>I still don't possess any professional experiencce, but I'm dedicated to learn</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018 - 2021</span><br>Highschool Degree in Science and Technologies at Escola Secundária de Mem Martins</li>
+                        <li><span>2021 - Current </span><br>Currently in my 2nd year of pursuing a Bachelor's degree in Telecomunications and Informatics Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
 </body>
 </html>
