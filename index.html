@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/9fd3599876.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+<!-------- Header -------->
 <div id="header">
     <div class="container">
         <nav>
@@ -77,23 +80,95 @@
     </div>
 </div>
 
-<script type="text/javascript">
+<!-------- Portfolio -------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/pygame.jpeg">
+                <div class="layer">
+                    <h3>Game developed in Pygame</h3>
+                    <p>This is a pong type game that has its twists
+                    such like levels and an economy system.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/javaPo.png">
+                <div class="layer">
+                    <h3>Clients and Terminals Project</h3>
+                    <p>This is a Java Project that emulates the behaviour of a Clients, Terminals and Comunications in a terminal system.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/c.jpeg">
+                <div class="layer">
+                    <h3>Airport System in C</h3>
+                    <p>This is a C Project that emulates the behaviour of an Airport system.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/webappsql.png">
+                <div class="layer">
+                    <h3>Orders Web App</h3>
+                    <p>This is a PostgreSQL Web App that emulates an Orders type App.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p5js.png">
+                <div class="layer">
+                    <h3>P5js App</h3>
+                    <p>This is a JavaScript App made with p5js that tests the reaction time.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/figmaa.png">
+                <div class="layer">
+                    <h3>Figma TimeBank App</h3>
+                    <p>This is a concept of a Time Bank App created in Figma.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/thomastabs" class="btn">See more of my projects in my Github</a>
+    </div>
+</div>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents")
+<!-------- Contact -------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>tomassantostaborda@gmail.com or tomassantostaborda@tecnico.ulisboa.pt</p>
+                <p>918138586</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100007571926646"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/TorradaDoMato"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/_tomas_esteve_aqui_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/thomastabs"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tomás-taborda-a028a8234/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
+<script type="text/javascript" src="app.js"></script>
 
 </body>
 </html>

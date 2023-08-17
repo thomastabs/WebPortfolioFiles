@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    padding: 6px 5%;
+    padding: 5px 5%;
 }
 
 nav {
@@ -31,7 +31,7 @@ nav {
 }
 
 .logo {
-    width: 460px;
+    width: 470px;
     height: auto;
     margin-top: 15px;
 }
@@ -89,11 +89,10 @@ nav ul li a:hover::after{
     width: 580px;
     height: 580px;
     border: 2px solid #ccc;
-    transition: border-width 0.3s, border-color 0.3s;
+    transition: border-color 0.3s ease-in-out;
   }
 
 .circular-border:hover {
-    border-width: 6px; /* Increase border width on hover */
     border-color: red; /* Change border color to red on hover */
 }
   
@@ -125,6 +124,12 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 80%;
     border-radius: 15px;
+    border: 2px solid transparent; /* Add a transparent border */
+    transition: border-color 0.3s ease-in-out;
+}
+
+.about-col-1 img:hover {
+    border-color: red; /* Change the border color to red on hover */
 }
 
 .about-col-2{
@@ -182,4 +187,99 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab{
     display: block;
+}
+
+/* ------ Portfolio ------ */
+
+#portfolio{
+    padding: 50px 20px;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    color: white;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; 
+}
+
+.work:hover .layer {
+    opacity: 1; 
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.layer h3{
+    font-weight: 500;
+}
+
+.layer a {
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.layer a:hover {
+    background-color: #ff004f;
+    color: #fff;
+    border-color: #fff;
+}
+
+.layer p {
+    margin: 10px 30px;
+    font-size: 15.5px; 
+}
+
+.btn {
+    display: block;
+    margin: 70px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 20px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
 }
