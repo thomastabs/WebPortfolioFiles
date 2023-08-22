@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: #080808;
     color: #FFF;
@@ -388,10 +392,11 @@ nav .fa-solid{
     }
 
     .logo{
-        width: 330px;
+        width: 260px;
         height: auto;
         margin-top: 3px;
-        align-items: center;
+        margin-left: 5px;
+        align-items: left;
     }
 
     .circular-border {
@@ -409,17 +414,20 @@ nav .fa-solid{
 
     nav .fa-solid{
         display: block;
-        font-size: 25px;
+        font-size: 23px;
+        margin-right: 18px;
     }
 
     nav ul{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: 52%;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
     }
 
     nav ul li{
@@ -433,4 +441,149 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .about-col-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .about-col-1 img{
+        width: 90%;
+    }
+
+    .about-col-2{
+        flex-basis: 100%;
+        margin-left: 12px;
+        font-size: 13px;
+    }
+
+    .tab-contents ul li{
+        text-align: justify;
+        text-justify: inter-word; 
+        margin-right: 20px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .work{
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+    }
+
+    .work-list {
+        grid-template-columns: 1fr; 
+    }
+
+    .layer{
+        bottom: auto; 
+        top: 20px;
+        left: 0; 
+        right: 0; 
+    }
+
+    .layer h3{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .layer p {
+        margin: 10px 30px;
+        font-size: 12px; 
+    }
+
+    .layer a {
+        font-size: 13px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .layer.layer1{
+        padding: 10px;
+        bottom: auto; 
+        top: 8px;
+    }
+
+    .layer.layer2{
+        padding: 10px;
+        bottom: auto; 
+        top: 22px;
+    }
+
+    .layer.layer3{
+        padding: 10px;
+        bottom: auto; 
+        top: 46px;
+    }
+
+    .layer.layer4{
+        padding: 10px;
+        bottom: auto; 
+        top: 33px;
+    }
+
+    .layer.layer5{
+        padding: 10px;
+        bottom: auto; 
+        top: 43px;
+    }
+
+    .layer.layer6{
+        padding: 10px;
+        bottom: auto; 
+        top: 33px;
+    }
+
+    .work img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-right{
+        flex-basis: 97%;
+    }
+
+    .contact-left p, .contact-right{
+        font-size: 13px;
+    }
+
+    .social-icons{
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .copyright{
+        font-size: 13px;
+    }
+}
+
+git config --global user.name "thomastabs"
+
+#msg{
+    color: #61b752;
+    margin-top: -25px;
+    margin-left: 20px;
+    display: block;
 }
