@@ -22,17 +22,17 @@ function closemenu(){
     sidemenu.style.right = "-200px";
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz4EZnZ-bbLzj1epNXjdsWtB8osCa1Fvyazk-Yt8PjKjZS_nRIwzHhUOtXfIByDpZpL3g/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwVsh4wbC92q4flaeZOrB4lY-UkEGTQF5gvA0KaTX4PbujV9SqizAO_r_EHEk8R46XZ/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
+    .then(response => {
         msg.innerHTML = "Message sent successfully!"
         setTimeout(function(){msg.innerHTML = ""}, 5000)
         form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+    })
+    .catch(error => console.error('Error!', error.message))
+})
