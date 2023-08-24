@@ -88,28 +88,6 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
-.circular-border {
-    position: absolute;
-    top: 50%;
-    right: 200px;
-    transform: translate(0, -50%);
-    border-radius: 50%;
-    overflow: hidden;
-    width: 580px;
-    height: 580px;
-    border: 2px solid #ccc;
-    transition: border-color 0.3s ease-in-out;
-  }
-
-.circular-border:hover {
-    border-color: red; /* Change border color to red on hover */
-}
-  
-.circular-border img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* ------ About ------ */
 
@@ -222,7 +200,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    height: 300px;
+    height: 260px;
 }
 
 .work img{
