@@ -200,7 +200,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    height: 260px;
+    height: 320px;
 }
 
 .work img{
